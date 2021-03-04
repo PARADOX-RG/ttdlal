@@ -1,0 +1,129 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #060606;
+    position: relative;
+    background-image: url('../images/ellipse-1.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__inner{
+        padding: 45px 0 15px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+    &__top{
+        margin-bottom: 190px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 430px;
+        ul.header__top-menu{
+            display: flex;
+            justify-content: center;
+        }
+        &-link{
+            font-size: 15px;
+            @extend %mont-400;
+            color: #fff;
+        }
+        .header__top-item + .header__top-item{
+            margin-left: 50px;
+        }
+    }
+    &__content{
+        margin-left: 115px;
+        &-title{
+            font-size: 38px;
+            line-height: 58px;
+            color: #fff;
+            @extend %mont-400;
+            display: block;
+        }
+        &-name{
+            font-size: 38px;
+            line-height: 58px;
+            color: #fff;
+            @extend %mont-700;
+            margin-bottom: 30px;
+        }
+        &-subtitle{
+            font-size: 24px;
+            @extend %mont-600;
+            margin-bottom: 33px;
+            color: #fff;
+        }
+        &-input{
+            max-width: 680px;
+            width: 100%;
+            padding: 15px 140px 15px 15px;
+            background-color: #292929;
+            border: none;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 23px;
+            @extend %mont-400;
+            outline: none;
+            margin-top: 5px;
+            position: relative;
+        }
+        &-btn{
+            padding: 20px;
+            width: 136px;
+            border-radius: 0 10px 0 10px;
+            border: none;
+            background-color: #eb5e00;
+            color: #fff;
+            font-size: 15px;
+            margin-left: -136px;
+            cursor: pointer;
+            @extend %mont-700;
+            position: absolute;
+            outline: none;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 24px;
+            @extend %mont-400;
+            color: #fff;
+            margin-bottom: 130px;
+            max-width: 350px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: end;
+        &-text{
+            color: #A9A9A9;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        &-name{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@import 'media';

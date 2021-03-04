@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="644" height="865" fill="none" viewBox="0 0 644 865">
+    <g filter="url(#filter0_di)">
+        <circle cx="616" cy="433" r="282" fill="#060606"/>
+    </g>
+    <defs>
+        <filter id="filter0_di" width="1012" height="1012" x="0" y="-73" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feMorphology in="SourceAlpha" operator="dilate" radius="20" result="effect1_dropShadow"/>
+            <feOffset dx="-110"/>
+            <feGaussianBlur stdDeviation="102"/>
+            <feColorMatrix values="0 0 0 0 0.921569 0 0 0 0 0.368627 0 0 0 0 0 0 0 0 0.16 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dx="20"/>
+            <feGaussianBlur stdDeviation="17"/>
+            <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/>
+            <feColorMatrix values="0 0 0 0 0.921569 0 0 0 0 0.368627 0 0 0 0 0 0 0 0 0.13 0"/>
+            <feBlend in2="shape" result="effect2_innerShadow"/>
+        </filter>
+    </defs>
+</svg>
