@@ -9,7 +9,7 @@
 }
 @font-face{
     font-family: 'Mont-SemiBold';
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
     src: local ('Mont-SemiBold'),
@@ -18,10 +18,19 @@
 }
 @font-face{
     font-family: 'Mont-Regular';
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
     src: local ('Mont-Regular'),
          url('../fonts/Mont-Regular.woff2') format('woff2'),
          url('../fonts/Mont-Regular.woff') format('woff'),;
+}
+@font-face{
+    font-family: 'Mont-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: local ('Mont-Light'),
+         url('../fonts/Mont-Light.woff2') format('woff2'),
+         url('../fonts/Mont-Light.woff') format('woff'),;
 }

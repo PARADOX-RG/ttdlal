@@ -27,7 +27,7 @@
     &__top{
         display: flex;
         justify-content: space-between;
-        max-width: 430px;
+        max-width: 560px;
         ul.header__top-menu{
             display: flex;
             justify-content: center;
@@ -42,7 +42,7 @@
             @extend %mont-700;
         }
         .header__top-item + .header__top-item{
-            margin-left: 50px;
+            margin-left: 110px;
         }
     }
     &__content{
@@ -67,6 +67,11 @@
             @extend %mont-600;
             margin-bottom: 33px;
             color: #fff;
+            font-weight: 500;
+            span{
+                font-weight: 300;
+                color: #a09999;
+            }
         }
         &-input{
             max-width: 680px;
@@ -76,15 +81,15 @@
             border: none;
             border-radius: 15px;
             font-size: 14px;
-            color: #fff;
+            color: #6e6e6e;
             margin-bottom: 23px;
             @extend %mont-400;
             outline: none;
-            margin-top: 5px;
+            margin-top: 3px;
             position: relative;
         }
         &-btn{
-            padding: 20px;
+            padding: 18px;
             width: 136px;
             border-radius: 0 10px 0 10px;
             border: none;
@@ -96,6 +101,7 @@
             @extend %mont-700;
             position: absolute;
             outline: none;
+            height: 54px;
         }
         &-text{
             font-size: 14px;
@@ -113,7 +119,7 @@
             font-size: 38px;
             line-height: 58px;
             color: #fff;
-            @extend %mont-400;
+            @extend %mont-700;
             margin-bottom: 12px;
         }
         &-text{
@@ -122,12 +128,13 @@
         }
         &-subtitle{
             font-size: 24px;
-            @extend %mont-400;
-            color: #fff;
+            @extend %mont-300;
+            color: #a09999;
+            // color: rgb(201, 198, 198);
         }
         &-span{
             font-size: 24px;
-            @extend %mont-600;
+            @extend %mont-400;
             color: #fff;
         }
         &-input__name{
@@ -138,10 +145,11 @@
             border: none;
             border-radius: 15px;
             font-size: 14px;
-            color: #fff;
+            color: #6e6e6e;
              margin-bottom: 20px;
             @extend %mont-400;
             outline: none;
+            font-weight: 300;
         }
         &-input__email{
             max-width: 490px;
@@ -151,7 +159,7 @@
             border: none;
             border-radius: 15px;
             font-size: 14px;
-            color: #fff;
+            color: #6e6e6e;
              margin-bottom: 20px;
             @extend %mont-400;
             outline: none;
@@ -165,14 +173,14 @@
             border: none;
             border-radius: 15px;
             font-size: 14px;
-            color: #fff;
+            color: #6e6e6e;
             @extend %mont-400;
             height: 96px;
             outline: none;
             margin-bottom: 15px;
         }
         &-btn{
-            padding: 20px;
+            padding: 18px;
             max-width: 490px;
             width: 100%;
             border-radius: 0 10px 0 10px;
@@ -183,6 +191,7 @@
             cursor: pointer;
             @extend %mont-700;
             outline: none;
+            height: 54px;
         }
     }
     &__bottom{
