@@ -25,7 +25,6 @@
         min-height: 100vh;
     }
     &__top{
-        margin-bottom: 190px;
         display: flex;
         justify-content: space-between;
         max-width: 430px;
@@ -36,7 +35,11 @@
         &-link{
             font-size: 15px;
             @extend %mont-400;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        &-link--active{
             color: #fff;
+            @extend %mont-700;
         }
         .header__top-item + .header__top-item{
             margin-left: 50px;
@@ -44,6 +47,7 @@
     }
     &__content{
         margin-left: 115px;
+        margin-top: 190px;
         &-title{
             font-size: 38px;
             line-height: 58px;
@@ -102,6 +106,85 @@
             max-width: 350px;
         }
     }
+    &__contact{
+        margin-left: 115px;
+        max-width: 500px;
+        &-title{
+            font-size: 38px;
+            line-height: 58px;
+            color: #fff;
+            @extend %mont-400;
+            margin-bottom: 12px;
+        }
+        &-text{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        &-subtitle{
+            font-size: 24px;
+            @extend %mont-400;
+            color: #fff;
+        }
+        &-span{
+            font-size: 24px;
+            @extend %mont-600;
+            color: #fff;
+        }
+        &-input__name{
+            max-width: 490px;
+            width: 100%;
+            padding: 15px;
+            background-color: #292929;
+            border: none;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #fff;
+             margin-bottom: 20px;
+            @extend %mont-400;
+            outline: none;
+        }
+        &-input__email{
+            max-width: 490px;
+            width: 100%;
+            padding: 15px;
+            background-color: #292929;
+            border: none;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #fff;
+             margin-bottom: 20px;
+            @extend %mont-400;
+            outline: none;
+        }
+        &-textarea{
+            resize: none;
+            max-width: 490px;
+            width: 100%;
+            padding: 15px;
+            background-color: #292929;
+            border: none;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #fff;
+            @extend %mont-400;
+            height: 96px;
+            outline: none;
+            margin-bottom: 15px;
+        }
+        &-btn{
+            padding: 20px;
+            max-width: 490px;
+            width: 100%;
+            border-radius: 0 10px 0 10px;
+            border: none;
+            background-color: #eb5e00;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            @extend %mont-700;
+            outline: none;
+        }
+    }
     &__bottom{
         display: flex;
         justify-content: end;
@@ -109,10 +192,12 @@
             color: #A9A9A9;
             margin-right: 5px;
             font-size: 14px;
+            @extend %mont-400;
         }
         &-name{
             color: #fff;
             font-size: 14px;
+            @extend %mont-400;
         }
     }
 }

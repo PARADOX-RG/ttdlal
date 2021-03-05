@@ -16,9 +16,9 @@
                     </a>
                     <ul class="header__top-menu">
                         <li class="header__top-item">
-                            <a class="header__top-link" href="#">
+                            <span class="header__top-link header__top-link--active" href="#">
                                 About Us.                         
-                            </a>
+                            </span>
                         </li>
                         <li class="header__top-item">
                             <a class="header__top-link" href="#">
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
                 <div class="header__content">
-                    <h2 class="header__content-title">
+                    <h2 class="header__content-title title">
                         We are working on the best
                     </h2>
                     <p class="header__content-name">TTDLAL App!</p>
@@ -51,7 +51,22 @@
             </div>
         </div>
     </header>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyB_nvbNE0iJ-iEIUQZPFuifA_wTvubJU_I",
+        authDomain: "ttdlad-1.firebaseapp.com",
+        projectId: "ttdlad-1",
+        storageBucket: "ttdlad-1.appspot.com",
+        messagingSenderId: "363543803943",
+        appId: "1:363543803943:web:8322b1d9243eddf510b602",
+        measurementId: "G-XE4FCV38TG"
+        };
 
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
     <script src="js/main.min.js"></script>
 </body>
 </html>
